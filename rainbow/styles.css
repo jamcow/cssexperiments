@@ -1,0 +1,47 @@
+:root {
+  --size: 70px;
+}
+
+/* RAINBOW */
+.rainbow {
+  animation: rainbow 1.5s ease-in-out infinite;
+  border-radius: var(--size) 0 0 0;
+  box-shadow:
+    #fb323c -2px -2px 0 1px,
+    #f99716 -4px -4px 0 3px,
+    #fee124 -6px -6px 0 5px,
+    #afdf2e -8px -8px 0 7px,
+    #6ad7f8 -10px -10px 0 9px,
+    #60b1f5 -12px -12px 0 11px,
+    #a3459b -14px -14px 0 13px;
+  height: var(--size);
+  width: var(--size);
+  margin-left: -40px;
+  position: absolute;
+  left: 610px;
+  top: 71px;
+  transform: rotate(0deg);
+  outline: 1px solid red;
+}
+
+@keyframes rainbow {
+  50% {
+    // transform: rotate(50deg);
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background: #efefef;
+  margin: 0;
+}
+
+.container {
+  transform: scale(4);
+  width: 1200px;
+  position: absolute;
+  height: 210px;
+  left: 50%;
+  top: 50%;
+  margin: -65px -600px;
+}
